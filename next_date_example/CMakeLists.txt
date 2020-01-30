@@ -2,7 +2,7 @@
 cmake_minimum_required(VERSION 3.10)
 
 #project name
-project(oscarch)
+project(nextdate)
 
 #add_definitions(-D_GLIBCXX_USE_CXX11_ABI=0)
 
@@ -23,4 +23,4 @@ file(GLOB_RECURSE SRC_FILES
         )
 
 #include all source code files to generate an executable
-add_executable(oscarch ${SRC_FILES})
+add_executable(nextdate_exec ${SRC_FILES})

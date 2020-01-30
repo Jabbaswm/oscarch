@@ -2,10 +2,6 @@
 // Created by ojcch on 1/30/2020.
 //
 
-using namespace std;
-
-
-//int * nextDate(int day, int month, int year);
 
 bool isLeapFn(int year) {
 
@@ -37,15 +33,15 @@ int *nextDate(int day, int month, int const year) {
     if (month < 1 || month > 12)
         throw -2;
 
-    int days = monthLength[month - 1];
+    int monthDays = monthLength[month - 1];
 
     bool isLeap = isLeapFn(year);
 
     if (month == 2 && isLeap) {
-        days++;
+        monthDays++;
     }
 
-    if (day > days) {
+    if (day > monthDays) {
         throw -3;
     }
 
@@ -54,7 +50,7 @@ int *nextDate(int day, int month, int const year) {
         next[0] = 1;
         next[1] = 1;
         next[2] = year + 1;
-    } else if (day == days) {
+    } else if (day == monthDays) {
         next[0] = 1;
         next[1] = month + 1;
         next[2] = year;
