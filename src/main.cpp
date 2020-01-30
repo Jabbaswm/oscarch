@@ -3,12 +3,22 @@
 //
 
 # include <iostream>
+
+
 # include "dir/nextdate.cpp"
 
 int main() {
     int day = 29;
     int month = 2;
     int year = 2020;
+
+    for (int i = 0; i < 10; ++i) {
+        cout<< i;
+    }
+
+
+    //asdfasdf
+
     try {
         int *next = nextDate(day, month, year);
         cout << next[1] << "/" << next[0] << "/" << next[2];
