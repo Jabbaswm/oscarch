@@ -22,6 +22,10 @@ Note: doing a clean compilation/building will require deleting the `build-win-ms
 
 ### Running the example on CLion
 
+Configuration: once you install CLion it will guide you through configuring MinGW within the IDE. It should work smoothly. However, for any problem, check [this page](https://www.jetbrains.com/help/clion/quick-tutorial-on-configuring-clion-on-windows.html#MinGW), which shows how to configure it step by step.
+
+Follow the next steps after you have configured CLion correctly.
+
 Open CLion, click on `File --> Open...`, select the [next_date_example](next_date_example) directory, and click `OK`.
 
 Then click on `Build --> Build project`, wait until it finishes, and then click on `Run --> Run 'nextdate_exec'`
