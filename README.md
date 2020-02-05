@@ -8,6 +8,7 @@ Software requirements:
     * `mingw-w64-x86_64-gcc` 
     * `mingw-w64-x86_64-cmake`
     * `mingw-w64-x86_64-make`
+    * `cmake`
 * (Optional) Any system: Install [CLion (Student edition)](https://www.jetbrains.com/student/)
 
 ### Running the example on the terminal
@@ -16,7 +17,7 @@ On **Linux and Mac OS**, open a terminal, change directory to [next_date_example
 
 Note: doing a clean compilation/building will require deleting the `build-linux` directory (`rm -r build-linux`)
 
-On **Windows**, open the MSYS2 MinGW terminal, change directory to [next_date_example](next_date_example), and run the script [./build_run_win_msys2.sh](next_date_example/build_run_win_msys2.sh)
+On **Windows**, open the **MSYS2 MinGW** terminal, change directory to [next_date_example](next_date_example), and run the script [./build_run_win_msys2.sh](next_date_example/build_run_win_msys2.sh)
 
 Note: doing a clean compilation/building will require deleting the `build-win-msys2` directory (`rm -r build-win-msys2`)
 
