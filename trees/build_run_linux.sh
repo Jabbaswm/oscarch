@@ -13,4 +13,4 @@ cmake ../
 cmake --build ./
 
 #we run the program now:
-./nextdate_exec
+./trees_exec

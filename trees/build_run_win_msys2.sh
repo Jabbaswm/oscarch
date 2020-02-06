@@ -15,4 +15,4 @@ cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=mingw32-make.exe -DCMAKE_C_C
 cmake --build ./
 
 #we run the program now:
-./nextdate_exec.exe
+./trees_exec.exe
