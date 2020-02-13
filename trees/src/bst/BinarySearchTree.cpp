@@ -92,7 +92,7 @@ TreeNode<Object> *BinarySearchTree<Object>::findMax(TreeNode<Object> *node) {
 
 template<class Object>
 void BinarySearchTree<Object>::remove(Object element) {
-    this->remove(this->root, element);
+    this->root = this->remove(this->root, element);
 }
 
 template<class Object>
@@ -117,7 +117,13 @@ TreeNode<Object> *BinarySearchTree<Object>::remove(TreeNode<Object> *node, Objec
             node->right = remove(node->right, temp->element);
         } else {
             //if no left child, then node should be the right child, otherwise, it should be left one
-            if (node->left == nullptr) temp = node->right; else temp = node->left;
+            if (node->left == nullptr) {
+                temp = node->right;
+                node->right = nullptr;
+            } else {
+                temp = node->left;
+                node->left = nullptr;
+            }
             delete (node);
             node = temp;
         }
